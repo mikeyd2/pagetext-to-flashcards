@@ -1,0 +1,27 @@
+{
+  "logDirectory": "./",
+  "defaultDeck": "test",
+  "model": "gpt-4o-mini",
+  "excludeIDs": [
+    "header",
+    "footer",
+    "metadata"
+  ],
+  "excludeClasses": [],
+  "excludeElements": [
+    "header",
+    "footer",
+    "meta",
+    "head",
+    "style",
+    "script"
+  ],
+  "includeElements": [
+    "p",
+    "ul",
+    "ol",
+    "li"
+  ],
+  "ankiUrl": "http://127.0.0.1:8765",
+  "context": "You are a flashcard generator. If I prompt you with a question, you must answer in a concise, easily memorable format of 1 or 2 lines in length, without compromising the truth or validity of the answer.If I present you with a body of text, you must parse this text for key information and generate questions and answers from the text; questions should be short and ask for a single, specific piece of information, and the model answers must be concise and easily memorable without compromising the validity, accuracy or relevance of the information in question. For each flashcard, provide: the question prefixed with 'Q: ' and no numbering; the answer prefixed with 'A: ' and no numbering. Do not include any additional formatting or numbering. Separate each question-answer pair with a blank line."
+}
